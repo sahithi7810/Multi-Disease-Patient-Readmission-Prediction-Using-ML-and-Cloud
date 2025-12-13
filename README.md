@@ -6,16 +6,12 @@ Hospital readmissions place a significant burden on healthcare systems by increa
 
 By analyzing patient demographics, clinical indicators, and treatment history, the system identifies high-risk patients before discharge. This enables healthcare providers to take preventive actions, improve patient outcomes, and optimize hospital resource planning.
 
----
-
 ## Objectives
 
 * Predict hospital readmission risk for patients with multiple diseases
 * Compare multiple machine learning models for performance
 * Build a scalable backend using cloud technologies
 * Provide an efficient and reusable ML pipeline for healthcare analytics
-
----
 
 ## Technologies Used
 
@@ -86,7 +82,7 @@ The dataset contains anonymized hospital records including:
 
    * Flask REST API
    * Cloud hosting for scalability
-   * 
+  
 ##  How to Run the Project
 
 ###  Step 1: Clone the Repository
