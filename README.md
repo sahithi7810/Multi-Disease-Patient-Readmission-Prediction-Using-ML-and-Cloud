@@ -40,31 +40,6 @@ By analyzing patient demographics, clinical indicators, and treatment history, t
 * Jupyter Notebook
 * Git & GitHub
 
-##  Project Structure
-
-```plaintext
-Multi-Disease-Patient-Readmission-Prediction-Using-ML-and-Cloud/
-│
-├── data/
-│   ├── raw_data.csv
-│   └── processed_data.csv
-│
-├── notebooks/
-│   ├── data_preprocessing.ipynb
-│   ├── exploratory_data_analysis.ipynb
-│   └── model_training.ipynb
-│
-├── models/
-│   ├── logistic_regression.pkl
-│   ├── random_forest.pkl
-│   └── xgboost_model.pkl
-│
-├── app.py
-├── requirements.txt
-├── README.md
-└── LICENSE
-```
-
 ## Dataset Description
 
 The dataset contains anonymized hospital records including:
@@ -139,11 +114,11 @@ The API will start locally and can be accessed through browser or Postman.
 
 ##  Model Performance (Sample)
 
-| Model               | Accuracy | Precision | Recall | F1-Score |
-| ------------------- | -------- | --------- | ------ | -------- |
-| Logistic Regression | 0.78     | 0.76      | 0.74   | 0.75     |
-| Random Forest       | 0.85     | 0.83      | 0.82   | 0.82     |
-| XGBoost             | 0.88     | 0.86      | 0.85   | 0.85     |
+Multiple machine learning models were evaluated to identify the most reliable approach for predicting patient readmission across different diseases. After comparative analysis, Random Forest was selected as the final model because it consistently delivered higher accuracy and better generalization across all disease categories.
+
+Random Forest performed particularly well due to its ability to handle non-linear relationships, feature interactions, and imbalanced healthcare data. By combining predictions from multiple decision trees, the model reduced overfitting and produced stable results for diverse patient conditions.
+
+As a result, Random Forest proved to be the most effective model for multi-disease readmission prediction in this project.
 
 
 ##  Cloud Deployment
